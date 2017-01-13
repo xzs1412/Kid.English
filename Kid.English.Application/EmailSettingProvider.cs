@@ -7,7 +7,7 @@ using Abp.Zero.Configuration;
 
 namespace Kid.English
 {
-   internal class EmailSettingProvider:SettingProvider
+    internal class EmailSettingProvider : SettingProvider
     {
         public override IEnumerable<SettingDefinition> GetSettingDefinitions(SettingDefinitionProviderContext context)
         {
@@ -20,7 +20,7 @@ namespace Kid.English
                 new SettingDefinition(EmailSettingNames.Smtp.Password, "*******"),
                 new SettingDefinition(EmailSettingNames.Smtp.UseDefaultCredentials, "false"),
                 new SettingDefinition(EmailSettingNames.DefaultFromDisplayName, "kid"),
-                new SettingDefinition(EmailSettingNames.Smtp.EnableSsl,"true"), 
+                new SettingDefinition(EmailSettingNames.Smtp.EnableSsl, "true"),
                 new SettingDefinition(
                     AbpZeroSettingNames.UserManagement.IsEmailConfirmationRequiredForLogin,
                     "true",
@@ -32,7 +32,7 @@ namespace Kid.English
 
         private static LocalizableString L(string name)
         {
-            return new LocalizableString(name,AbpConsts.LocalizationSourceName);
+            return new LocalizableString(name, AbpConsts.LocalizationSourceName);
         }
     }
 }

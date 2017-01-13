@@ -14,3 +14,4 @@ http://forum.aspnetboilerplate.com/viewtopic.php?t=87&p=153
 2.获取包含被软删除的记录
 3.领域事件(EntityEvent类里)
 4.hangfire
+5.AbpSession扩展(代码有点散:搜索"IAbpSession Extensions")
