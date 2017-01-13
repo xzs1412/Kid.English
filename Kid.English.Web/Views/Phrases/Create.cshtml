@@ -1,0 +1,60 @@
+﻿@model  Kid.English.Phrases.Dto.PhraseCreateDto
+
+@{
+    ViewBag.Title = L("CreateANewPhrase");
+}
+
+
+    @*<h4>@L("CreateANewPhrase")</h4>*@
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+       
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.SentenceHtml,L("SampleSentence"), htmlAttributes: new { @class = "control-label col-md-2 col-sm-2 " })
+                <div class="col-md-10 col-sm-10 ">
+                    <script id="uediotr" type="text/plain" style="width:100%">
+                    </script>
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ChineseMean,L("ChineseMean"),htmlAttributes: new { @class = "control-label col-md-2 col-sm-2 col-xs-0" })
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    @Html.EditorFor(model => model.ChineseMean, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ChineseMean, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10  col-sm-offset-2 col-sm-10"  >
+                        <input type="submit" value='@L("Add")' class="btn btn-primary" style="width:100%" />  
+                </div>
+            </div>
+        </div>
+    }
+
+
+@section Scripts {
+  
+    <script src="~/ueditor/ueditor.config.js"></script>
+    <script src="~/ueditor/ueditor.all.min.js"></script>
+    <script src="~/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+    <script type="text/javascript">
+        var ue = UE.getEditor('uediotr');
+        ue.addListener("ready", function () {
+            //ue.addListener("afterexeccommand", function (t, e, arg) {
+            //    ue.focus(true);
+
+            //    ue.execCommand("color", "black");
+            //});
+            ue.focus(); //编辑器加载完成后，让编辑器拿到焦点
+        });
+
+    </script>
+}
+
+

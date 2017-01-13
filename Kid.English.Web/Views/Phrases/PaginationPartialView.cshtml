@@ -1,0 +1,168 @@
+﻿@model PaginationInfo
+
+@{
+
+    var pageCount = (int)Math.Ceiling((double)Model.TotalCount / (double)Model.PageSize);
+    if (pageCount > 1)
+    {
+        #region 计算出要显示的页码:上页,1,当前页的前3+1页,当前页,当前页的后3+1页,最后一页(数字),下页
+        //保存最终显示的页码
+        List<int> pageList = new List<int>();
+
+        if (pageCount <= 9 + 2)
+        {
+            for (var i = 1; i <= pageCount; i++)
+            {
+                pageList.Add(i);
+            }
+        }
+        else//pageCount>9+2
+        {
+            if (ViewBag.pageIndex == 1)  //当前页为第一页
+            {
+                for (int i = 1; i <= 8 + 2; i++)
+                {
+                    pageList.Add(i);
+                }
+                pageList.Add(pageCount);
+            }
+            else if (ViewBag.pageIndex == pageCount)//当前页为最后一页
+            {
+                pageList.Add(1);
+                for (int i = pageCount - 7 - 2; i <= pageCount; i++)
+                {
+                    pageList.Add(i);
+                }
+            }
+            else
+            {
+                pageList.Add(1);
+                if (ViewBag.pageIndex - 3 - 1 < 2)
+                {
+                    for (int i = 2; i <= 8 + 2; i++)
+                    {
+                        pageList.Add(i);
+                    }
+                }
+                else if (ViewBag.pageIndex + 3 + 1 >= pageCount)
+                {
+                    for (int i = pageCount - 7 - 2; i < pageCount; i++)
+                    {
+                        pageList.Add(i);
+                    }
+                }
+                else
+                {
+                    for (int i = ViewBag.pageIndex - 3 - 1; i <= ViewBag.pageIndex + 3 + 1; i++)
+                    {
+                        pageList.Add(i);
+                    }
+
+                }
+                pageList.Add(pageCount);
+            }
+        }
+        #endregion
+
+        // 根据计算出来的要显示的页码,生成页码Html
+        <div style="margin:0 0 5px 0;">
+            <ul class="pagination" style="margin:0;">
+                @foreach (var i in pageList)
+                {
+                    //第1页
+                    if (i == 1)
+                    {
+                        //当前页为1：上一页不可用。
+                        if (ViewBag.pageIndex == 1)
+                        {
+                            <li class="disabled">
+                                <span>
+                                    <span aria-hidden="true">&laquo;</span>
+                                </span>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="@Url.Action(
+                                "Search",
+                                new
+                                {
+                                    englishKeyWords = Model.EnglishKeyWords,
+                                    chineseKeyWords = Model.ChineseKeyWords,
+                                    pageIndex = Model.PageIndex - 1
+                                })">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                        }
+                    }
+
+                    //当前页：亮色突显
+                    if (i == ViewBag.pageIndex)
+                    {
+
+                       
+
+                        <li class="active">
+                            @*<input type="text"   style="width:60px;" id="currentPageIndex" value="@i" />*@
+                            @Html.ActionLink(
+                                 i.ToString(),
+                                 "Search",
+                                 new
+                                 {
+                                     englishKeyWords = Model.EnglishKeyWords,
+                                     chineseKeyWords = Model.ChineseKeyWords,
+                                     pageIndex = i
+                                 })
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            @Html.ActionLink(
+                                 i.ToString(),
+                                 "Search",
+                                 new
+                                 {
+                                     englishKeyWords = Model.EnglishKeyWords,
+                                     chineseKeyWords = Model.ChineseKeyWords,
+                                     pageIndex = i
+                                 })
+                        </li>
+                    }
+                    //最后一页
+                    if (i == pageCount)
+                    {
+                        //当前页为最后一页：下一页不可用。
+                        if (pageCount == ViewBag.pageIndex)
+                        {
+                            <li class="disabled">
+                                <span>
+                                    <span aria-hidden="true">&raquo;</span>
+                                </span>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="@Url.Action(
+                                    "Search",
+                                    new
+                                    {
+                                        englishKeyWords = Model.EnglishKeyWords,
+                                        chineseKeyWords = Model.ChineseKeyWords,
+                                        pageIndex = Model.PageIndex + 1
+                                    })">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        }
+                    }
+                }
+            </ul>
+        </div>
+
+    }//if(pageCount>1)
+}
+
