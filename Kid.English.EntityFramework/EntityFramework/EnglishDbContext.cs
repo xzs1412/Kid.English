@@ -18,20 +18,20 @@ namespace Kid.English.EntityFramework
          *   But it may cause problems when working Migrate.exe of EF. If you will apply migrations on command line, do not
          *   pass connection string name to base classes. ABP works either way.
          */
+
         public EnglishDbContext()
             : base("Default")
         {
-
         }
 
         /* NOTE:
          *   This constructor is used by ABP to pass connection string defined in EnglishDataModule.PreInitialize.
          *   Notice that, actually you will not directly create an instance of EnglishDbContext since ABP automatically handles it.
          */
+
         public EnglishDbContext(string nameOrConnectionString)
             : base(nameOrConnectionString)
         {
-
             //this.Database.Log = l => Logger.Debug(l);
         }
 
@@ -39,8 +39,14 @@ namespace Kid.English.EntityFramework
         public EnglishDbContext(DbConnection connection)
             : base(connection, true)
         {
-
             //this.Database.Log = l => Logger.Debug(l);
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ChangeAbpTablePrefix<Tenant, Role, User>(string.Empty, "Abp");
         }
     }
 }

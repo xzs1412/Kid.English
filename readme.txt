@@ -15,3 +15,4 @@ http://forum.aspnetboilerplate.com/viewtopic.php?t=87&p=153
 3.领域事件(EntityEvent类里)
 4.hangfire
 5.AbpSession扩展(代码有点散:搜索"IAbpSession Extensions")
+6.修改了默认的表前缀(Abp)
