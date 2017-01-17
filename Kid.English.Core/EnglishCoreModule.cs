@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Abp.Localization;
 using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Xml;
 using Abp.Modules;
@@ -34,6 +35,10 @@ namespace Kid.English
 
             //Remove the following line to disable multi-tenancy.
             //Configuration.MultiTenancy.IsEnabled = true;
+
+           // 1010    NULL en  English famfamfam-flag - gb   False NULL    NULL NULL    NULL    2016 - 11 - 13 21:11:19.967 NULL
+//1012    NULL zh-CN   简体中文 famfamfam-flag - cn   False NULL    NULL NULL    NULL    2016 - 11 - 13 21:11:19.967 NULL
+            Configuration.Localization.Languages.Add(new LanguageInfo("en","tuerqi","famfamfam-flag-tr")); 
 
             //Add/remove localization sources here
             Configuration.Localization.Sources.Add(

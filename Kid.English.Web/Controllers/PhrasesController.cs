@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using Abp.Authorization;
 using Kid.English.BackgroundJobs;
+using Kid.English.Notification;
 using Kid.English.Phrases;
 using Kid.English.Phrases.Dto;
 
@@ -12,13 +13,15 @@ namespace Kid.English.Web.Controllers
     {
         private readonly IEmailAppService _emailAppService;
         private readonly IPhraseAppService _phraseAppService;
+        private readonly PublishService _publishService;
 
         // GET: Phrases
-
-        public PhrasesController(IPhraseAppService phraseAppService, IEmailAppService emailAppService)
+        public PhrasesController(IPhraseAppService phraseAppService, IEmailAppService emailAppService
+            ,PublishService publishService)
         {
             _phraseAppService = phraseAppService;
             _emailAppService = emailAppService;
+            _publishService = publishService;
         }
 
         public async Task<ActionResult> Index(int pageIndex = 1, string englishKeyWords = "",
@@ -26,6 +29,7 @@ namespace Kid.English.Web.Controllers
         {
             CheckModelState();
             //var fullName = AbpSession.FullName;
+        // await   _publishService.Publish_LowDisk(12);
             return await Search(englishKeyWords, chineseKeyWords, pageIndex);
             //PhraseListInput input = new Phrases.Dto.PhraseListInput
             //{

@@ -48,8 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Abp, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.1.2.0.0\lib\net452\Abp.dll</HintPath>
+    <Reference Include="Abp, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.1.2.1.0\lib\net452\Abp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -740,6 +740,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Layout\TopMenuViewModel.cs" />
+    <Compile Include="MyChatHub.cs" />
+    <Compile Include="Notification\MyChatHub.cs" />
     <Compile Include="PaginationInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\EnglishWebViewPageBase.cs" />

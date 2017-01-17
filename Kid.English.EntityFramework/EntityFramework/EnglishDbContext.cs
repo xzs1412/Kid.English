@@ -46,7 +46,7 @@ namespace Kid.English.EntityFramework
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.ChangeAbpTablePrefix<Tenant, Role, User>(string.Empty, "Abp");
+            modelBuilder.ChangeAbpTablePrefix<Tenant, Role, User>("Abp","dbo");
         }
     }
 }

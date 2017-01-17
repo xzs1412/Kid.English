@@ -21,9 +21,10 @@ namespace Kid.English.Web
         typeof(EnglishDataModule),
         typeof(EnglishApplicationModule),
         typeof(EnglishWebApiModule),
+         typeof(AbpWebMvcModule),
         typeof(AbpWebSignalRModule),
-        typeof(AbpHangfireModule), //- ENABLE TO USE HANGFIRE INSTEAD OF DEFAULT JOB MANAGER
-        typeof(AbpWebMvcModule))]
+        typeof(AbpHangfireModule) //- ENABLE TO USE HANGFIRE INSTEAD OF DEFAULT JOB MANAGER
+       )]
     public class EnglishWebModule : AbpModule
     {
         /// <summary>

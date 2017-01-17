@@ -531,12 +531,7 @@ namespace Kid.English.Web.Controllers
         {
             var claimsPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
 
-            if (claimsPrincipal == null)
-            {
-                return null;
-            }
-
-            var claim = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == key);
+            var claim = claimsPrincipal?.Claims.FirstOrDefault(c => c.Type == key);
             if (string.IsNullOrEmpty(claim?.Value))
             {
                 return null;

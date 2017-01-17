@@ -26,7 +26,6 @@ namespace Kid.English
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-
         }
     }
 }

@@ -27,6 +27,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -207,6 +208,10 @@
     <Compile Include="Migrations\201701140301530_RemoveAbpPrefixesAndSchema.Designer.cs">
       <DependentUpon>201701140301530_RemoveAbpPrefixesAndSchema.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701161202097_RestoreAbpPrefix.cs" />
+    <Compile Include="Migrations\201701161202097_RestoreAbpPrefix.Designer.cs">
+      <DependentUpon>201701161202097_RestoreAbpPrefix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="EnglishDataModule.cs" />
@@ -290,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701140301530_RemoveAbpPrefixesAndSchema.resx">
       <DependentUpon>201701140301530_RemoveAbpPrefixesAndSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701161202097_RestoreAbpPrefix.resx">
+      <DependentUpon>201701161202097_RestoreAbpPrefix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
