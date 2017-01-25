@@ -27,12 +27,12 @@ namespace Kid.English.Phrases
         {
             var phrases =
                 _phraseRepository.GetAll().OrderByDescending(p => p.CreationTime).Take(input.MaxResultCount).ToList();
-            // as IReadOnlyList<Phrase>;
-            var phraseListOutput = new PhraseListOutput();
-            phraseListOutput.Items = Mapper.Map<IReadOnlyList<PhraseDto>>(phrases);
-            phraseListOutput.TotalCount = _phraseRepository.Count();
 
-            return phraseListOutput;
+            return new PhraseListOutput()
+            {
+                Items = Mapper.Map<IReadOnlyList<PhraseDto>>(phrases),
+                TotalCount = _phraseRepository.Count()
+            };
         }
 
         public void CreatePhrase(PhraseCreateDto input)
@@ -40,6 +40,7 @@ namespace Kid.English.Phrases
             var phrase = Mapper.Map<Phrase>(input);
             phrase.Id = Guid.NewGuid();
             _phraseRepository.Insert(phrase);
+            CurrentUnitOfWork.SaveChanges();
         }
 
 
@@ -74,15 +75,14 @@ namespace Kid.English.Phrases
 
         public PhraseListOutput SearchPhrases(PhraseListInput input)
         {
-            var count = 0;
+            int count;
             var phrases = _phraseRepository.SearchPhrases(out count, input.EnglishKeyWords,
                 input.ChineseKeyWords, input.PageIndex, input.MaxResultCount);
-            var phraseListOutput = new PhraseListOutput
+            return new PhraseListOutput
             {
                 TotalCount = count,
                 Items = Mapper.Map<List<PhraseDto>>(phrases)
             };
-            return phraseListOutput;
         }
 
         public async Task<PhraseListOutput> SearchPhrasesAsync(PhraseListInput input)
@@ -92,12 +92,11 @@ namespace Kid.English.Phrases
                     _phraseRepository.SearchPhrasesAsync(input.EnglishKeyWords, input.ChineseKeyWords, input.PageIndex,
                         input.MaxResultCount);
 
-            var phraseListOutput = new PhraseListOutput
+            return new PhraseListOutput
             {
                 TotalCount = phrasesAndCount.Item1,
                 Items = Mapper.Map<List<PhraseDto>>(phrasesAndCount.Item2)
             };
-            return phraseListOutput;
         }
 
         /// <summary>
@@ -112,6 +111,11 @@ namespace Kid.English.Phrases
                 var phrases = _phraseRepository.GetAll().Where(p => p.IsDeleted).ToList();
                 return Mapper.Map<List<PhraseDto>>(phrases);
             }
+        }
+
+        public int GetCount()
+        {
+            return _phraseRepository.GetAll().Count();
         }
     }
 }

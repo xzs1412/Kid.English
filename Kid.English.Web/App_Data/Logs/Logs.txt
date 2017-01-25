@@ -2344,3 +2344,802 @@ DEBUG 2017-01-18 02:27:27,429 [gator] Hangfire.SqlServer.CountersAggregator    -
 DEBUG 2017-01-18 02:27:27,454 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
 DEBUG 2017-01-18 02:32:27,455 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
 DEBUG 2017-01-18 02:32:27,475 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-19 17:14:22,156 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-01-19 17:14:22,193 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-01-19 17:14:22,200 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Web.EnglishWebModule, Kid.English.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,203 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishDataModule, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,203 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,203 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishCoreModule, Kid.English.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,205 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishApplicationModule, Kid.English.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,205 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Api.EnglishWebApiModule, Kid.English.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:22,211 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-01-19 17:14:22,904 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-19 17:14:22,904 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-19 17:14:22,904 [1    ] o.Configuration.LanguageManagementConfig - Converted English (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-19 17:14:22,904 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2017-01-19 17:14:23,586 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2017-01-19 17:14:25,055 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2017-01-19 17:14:25,945 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Kid.English.EntityFramework.EnglishDbContext, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-19 17:14:27,072 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-01-19 17:14:27,086 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-01-19 17:14:27,093 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-01-19 17:14:27,093 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: English
+DEBUG 2017-01-19 17:14:27,094 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-01-19 17:14:27,104 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2017-01-19 17:14:27,129 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2017-01-19 17:14:27,132 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@English'
+INFO  2017-01-19 17:14:27,132 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2017-01-19 17:14:27,132 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2017-01-19 17:14:27,132 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2017-01-19 17:14:27,132 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2017-01-19 17:14:27,133 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2017-01-19 17:14:27,133 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2017-01-19 17:14:27,133 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2017-01-19 17:14:27,227 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-01-19 17:14:27,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2017-01-19 17:14:27,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-01-19 17:14:27,322 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-01-19 17:14:27,322 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.CreateUserInput
+DEBUG 2017-01-19 17:14:27,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.UserListDto
+DEBUG 2017-01-19 17:14:27,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseCreateDto
+DEBUG 2017-01-19 17:14:27,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseDto
+DEBUG 2017-01-19 17:14:27,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseUpdateInput
+DEBUG 2017-01-19 17:14:27,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-01-19 17:14:27,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-01-19 17:14:27,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-01-19 17:14:27,801 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2017-01-19 17:14:27,805 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2017-01-19 17:14:27,842 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-01-19 17:14:27,856 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-01-19 17:14:27,856 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-01-19 17:14:27,859 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+INFO  2017-01-19 17:14:27,863 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2017-01-19 17:14:27,867 [2b0b3] Hangfire.Server.Worker                   - Background process 'Worker #5592b0b3' started.
+DEBUG 2017-01-19 17:14:27,884 [f6ed6] Hangfire.Server.Worker                   - Background process 'Worker #40af6ed6' started.
+DEBUG 2017-01-19 17:14:27,894 [4a0f8] Hangfire.Server.Worker                   - Background process 'Worker #5854a0f8' started.
+DEBUG 2017-01-19 17:14:27,901 [f02cd] Hangfire.Server.Worker                   - Background process 'Worker #073f02cd' started.
+DEBUG 2017-01-19 17:14:27,909 [5a7b7] Hangfire.Server.Worker                   - Background process 'Worker #9d55a7b7' started.
+DEBUG 2017-01-19 17:14:27,936 [10702] Hangfire.Server.Worker                   - Background process 'Worker #e1310702' started.
+DEBUG 2017-01-19 17:14:27,949 [46057] Hangfire.Server.Worker                   - Background process 'Worker #53e46057' started.
+DEBUG 2017-01-19 17:14:27,970 [3acc3] Hangfire.Server.Worker                   - Background process 'Worker #4ce3acc3' started.
+DEBUG 2017-01-19 17:14:28,025 [b5b1f] Hangfire.Server.Worker                   - Background process 'Worker #5d5b5b1f' started.
+DEBUG 2017-01-19 17:14:28,071 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-19 17:14:28,091 [2d336] Hangfire.Server.Worker                   - Background process 'Worker #c2c2d336' started.
+DEBUG 2017-01-19 17:14:28,158 [2fba9] Hangfire.Server.Worker                   - Background process 'Worker #26c2fba9' started.
+DEBUG 2017-01-19 17:14:28,201 [93efa] Hangfire.Server.Worker                   - Background process 'Worker #b6d93efa' started.
+DEBUG 2017-01-19 17:14:28,227 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-01-19 17:14:28,227 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2017-01-19 17:14:28,277 [a1952] Hangfire.Server.Worker                   - Background process 'Worker #70fa1952' started.
+DEBUG 2017-01-19 17:14:28,278 [9e6ac] Hangfire.Server.Worker                   - Background process 'Worker #33b9e6ac' started.
+DEBUG 2017-01-19 17:14:28,354 [b4853] Hangfire.Server.Worker                   - Background process 'Worker #032b4853' started.
+DEBUG 2017-01-19 17:14:28,377 [9035d] Hangfire.Server.Worker                   - Background process 'Worker #5299035d' started.
+DEBUG 2017-01-19 17:14:28,402 [27e18] Hangfire.Server.Worker                   - Background process 'Worker #58e27e18' started.
+DEBUG 2017-01-19 17:14:28,418 [29e55] Hangfire.Server.Worker                   - Background process 'Worker #d2b29e55' started.
+DEBUG 2017-01-19 17:14:28,462 [0ad57] Hangfire.Server.Worker                   - Background process 'Worker #5820ad57' started.
+DEBUG 2017-01-19 17:14:28,463 [d5cea] Hangfire.Server.Worker                   - Background process 'Worker #f64d5cea' started.
+DEBUG 2017-01-19 17:14:28,501 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2017-01-19 17:14:28,501 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2017-01-19 17:14:28,520 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-01-19 17:14:28,553 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2017-01-19 17:14:28,553 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2017-01-19 17:14:28,560 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-01-19 17:14:28,614 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2017-01-19 17:14:28,614 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2017-01-19 17:14:28,662 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2017-01-19 17:14:31,386 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-01-19 17:14:31,387 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-01-19 17:14:31,388 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-01-19 17:14:31,390 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Phrases.IPhraseAppService' with service name 'app/phrase'.
+DEBUG 2017-01-19 17:14:31,393 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Notification.IPublishService' with service name 'app/publishService'.
+DEBUG 2017-01-19 17:14:31,395 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-01-19 17:14:31,397 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.BackgroundJobs.IEmailAppService' with service name 'app/email'.
+DEBUG 2017-01-19 17:14:50,776 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"332073c4-041f-46e2-acbf-ab757d204f62","IpAddress":"::1","TenantId":1,"UserId":null,"ConnectTime":"2017-01-19T17:14:50.7651108+08:00","Properties":{}}
+DEBUG 2017-01-19 17:14:51,005 [7    ] Kid.English.Web.Notification.MyChatHub   - A client connected from MyChatHub:332073c4-041f-46e2-acbf-ab757d204f62 and UserId:
+DEBUG 2017-01-19 17:14:51,372 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 332073c4-041f-46e2-acbf-ab757d204f62
+DEBUG 2017-01-19 17:19:28,071 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-19 17:19:28,251 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-19 17:20:53,108 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 332073c4-041f-46e2-acbf-ab757d204f62
+DEBUG 2017-01-19 17:20:53,201 [61   ] Kid.English.Web.Notification.MyChatHub   - A client disconnected from MyChatHub:332073c4-041f-46e2-acbf-ab757d204f62 and UserId:
+DEBUG 2017-01-19 17:20:53,781 [65   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"199a3373-ace4-490c-9a4a-eb5c4b21b031","IpAddress":"::1","TenantId":1,"UserId":null,"ConnectTime":"2017-01-19T17:20:53.7808985+08:00","Properties":{}}
+DEBUG 2017-01-19 17:20:53,834 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 199a3373-ace4-490c-9a4a-eb5c4b21b031
+DEBUG 2017-01-19 17:21:06,236 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2d05d1f9-57f6-41ea-bce8-15f707cf6b30","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-19T17:21:06.235422+08:00","Properties":{}}
+DEBUG 2017-01-19 17:21:06,240 [68   ] Kid.English.Web.Notification.MyChatHub   - A client connected from MyChatHub:2d05d1f9-57f6-41ea-bce8-15f707cf6b30 and UserId:2
+DEBUG 2017-01-19 17:21:06,248 [67   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2d05d1f9-57f6-41ea-bce8-15f707cf6b30
+DEBUG 2017-01-19 17:21:13,350 [67   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2d05d1f9-57f6-41ea-bce8-15f707cf6b30
+DEBUG 2017-01-19 17:21:13,350 [67   ] Kid.English.Web.Notification.MyChatHub   - A client disconnected from MyChatHub:2d05d1f9-57f6-41ea-bce8-15f707cf6b30 and UserId:
+DEBUG 2017-01-19 17:21:35,921 [69   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 199a3373-ace4-490c-9a4a-eb5c4b21b031
+DEBUG 2017-01-25 23:09:54,363 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-01-25 23:09:54,400 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-01-25 23:09:54,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Web.EnglishWebModule, Kid.English.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishDataModule, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishCoreModule, Kid.English.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishApplicationModule, Kid.English.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Api.EnglishWebApiModule, Kid.English.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:09:54,417 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-01-25 23:09:54,947 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:09:54,947 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:09:54,947 [1    ] o.Configuration.LanguageManagementConfig - Converted English (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:09:54,947 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2017-01-25 23:09:55,296 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2017-01-25 23:09:56,242 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2017-01-25 23:09:57,285 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Kid.English.EntityFramework.EnglishDbContext, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:10:02,127 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-01-25 23:10:02,138 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-01-25 23:10:02,143 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-01-25 23:10:02,144 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: English
+DEBUG 2017-01-25 23:10:02,146 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-01-25 23:10:02,154 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2017-01-25 23:10:02,168 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2017-01-25 23:10:02,172 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@English'
+INFO  2017-01-25 23:10:02,172 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2017-01-25 23:10:02,172 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2017-01-25 23:10:02,172 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2017-01-25 23:10:02,172 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2017-01-25 23:10:02,172 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2017-01-25 23:10:02,173 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2017-01-25 23:10:02,173 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2017-01-25 23:10:02,214 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-01-25 23:10:02,335 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2017-01-25 23:10:02,335 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-01-25 23:10:02,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-01-25 23:10:02,344 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.CreateUserInput
+DEBUG 2017-01-25 23:10:02,344 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.UserListDto
+DEBUG 2017-01-25 23:10:02,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseCreateDto
+DEBUG 2017-01-25 23:10:02,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseDto
+DEBUG 2017-01-25 23:10:02,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseUpdateInput
+DEBUG 2017-01-25 23:10:02,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-01-25 23:10:02,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-01-25 23:10:02,346 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-01-25 23:10:02,580 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2017-01-25 23:10:02,581 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2017-01-25 23:10:02,612 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-01-25 23:10:02,614 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-01-25 23:10:02,618 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-01-25 23:10:02,619 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-25 23:10:02,686 [5b267] Hangfire.Server.Worker                   - Background process 'Worker #a5d5b267' started.
+DEBUG 2017-01-25 23:10:02,688 [8ea18] Hangfire.Server.Worker                   - Background process 'Worker #3578ea18' started.
+INFO  2017-01-25 23:10:02,699 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2017-01-25 23:10:02,723 [c8504] Hangfire.Server.Worker                   - Background process 'Worker #38fc8504' started.
+DEBUG 2017-01-25 23:10:02,800 [be8e9] Hangfire.Server.Worker                   - Background process 'Worker #bc4be8e9' started.
+DEBUG 2017-01-25 23:10:02,855 [dd741] Hangfire.Server.Worker                   - Background process 'Worker #011dd741' started.
+DEBUG 2017-01-25 23:10:02,887 [689e3] Hangfire.Server.Worker                   - Background process 'Worker #10f689e3' started.
+DEBUG 2017-01-25 23:10:02,918 [3268c] Hangfire.Server.Worker                   - Background process 'Worker #6a13268c' started.
+DEBUG 2017-01-25 23:10:02,985 [7afe2] Hangfire.Server.Worker                   - Background process 'Worker #fa87afe2' started.
+DEBUG 2017-01-25 23:10:03,085 [3001f] Hangfire.Server.Worker                   - Background process 'Worker #a753001f' started.
+DEBUG 2017-01-25 23:10:03,113 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-01-25 23:10:03,113 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2017-01-25 23:10:03,126 [f7b76] Hangfire.Server.Worker                   - Background process 'Worker #5d4f7b76' started.
+DEBUG 2017-01-25 23:10:03,164 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-25 23:10:03,196 [bc431] Hangfire.Server.Worker                   - Background process 'Worker #329bc431' started.
+DEBUG 2017-01-25 23:10:03,197 [04dce] Hangfire.Server.Worker                   - Background process 'Worker #d3504dce' started.
+DEBUG 2017-01-25 23:10:03,241 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2017-01-25 23:10:03,241 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2017-01-25 23:10:03,255 [7b3b9] Hangfire.Server.Worker                   - Background process 'Worker #be97b3b9' started.
+DEBUG 2017-01-25 23:10:03,279 [99648] Hangfire.Server.Worker                   - Background process 'Worker #b9999648' started.
+DEBUG 2017-01-25 23:10:03,296 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2017-01-25 23:10:03,296 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2017-01-25 23:10:03,296 [d6cb4] Hangfire.Server.Worker                   - Background process 'Worker #1cad6cb4' started.
+DEBUG 2017-01-25 23:10:03,350 [6e92e] Hangfire.Server.Worker                   - Background process 'Worker #1aa6e92e' started.
+DEBUG 2017-01-25 23:10:03,366 [f0605] Hangfire.Server.Worker                   - Background process 'Worker #296f0605' started.
+DEBUG 2017-01-25 23:10:03,428 [8b80d] Hangfire.Server.Worker                   - Background process 'Worker #b138b80d' started.
+DEBUG 2017-01-25 23:10:03,429 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2017-01-25 23:10:03,429 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2017-01-25 23:10:03,429 [72e2a] Hangfire.Server.Worker                   - Background process 'Worker #bcf72e2a' started.
+DEBUG 2017-01-25 23:10:03,485 [04d8a] Hangfire.Server.Worker                   - Background process 'Worker #05204d8a' started.
+DEBUG 2017-01-25 23:10:03,511 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2017-01-25 23:10:03,516 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-01-25 23:10:03,517 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-01-25 23:10:06,861 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-01-25 23:10:06,863 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-01-25 23:10:06,865 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-01-25 23:10:06,866 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Phrases.IPhraseAppService' with service name 'app/phrase'.
+DEBUG 2017-01-25 23:10:06,868 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Notification.IPublishService' with service name 'app/publishService'.
+DEBUG 2017-01-25 23:10:06,870 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-01-25 23:10:06,872 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.BackgroundJobs.IEmailAppService' with service name 'app/email'.
+WARN  2017-01-25 23:10:14,990 [5    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:行号 100
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:行号 27
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:行号 48
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:行号 100
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:行号 27
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:行号 48
+DEBUG 2017-01-25 23:10:26,615 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"13e1935a-eb25-49c8-b0d8-5b35bb7e9118","IpAddress":"::1","TenantId":1,"UserId":null,"ConnectTime":"2017-01-25T23:10:26.6008752+08:00","Properties":{}}
+DEBUG 2017-01-25 23:10:26,686 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 13e1935a-eb25-49c8-b0d8-5b35bb7e9118
+DEBUG 2017-01-25 23:11:46,663 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a4490296-5918-4019-9cca-3d463a9d0ff3","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:11:46.6625624+08:00","Properties":{}}
+DEBUG 2017-01-25 23:11:46,875 [38   ] Kid.English.Web.Notification.MyChatHub   - A client connected from MyChatHub:a4490296-5918-4019-9cca-3d463a9d0ff3 and UserId:2
+DEBUG 2017-01-25 23:11:47,022 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a4490296-5918-4019-9cca-3d463a9d0ff3
+DEBUG 2017-01-25 23:11:50,831 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b97e1cd2-d7b1-4590-b9ce-5837f66f8a96","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:11:50.831422+08:00","Properties":{}}
+DEBUG 2017-01-25 23:11:50,965 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b97e1cd2-d7b1-4590-b9ce-5837f66f8a96
+DEBUG 2017-01-25 23:11:54,783 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b97e1cd2-d7b1-4590-b9ce-5837f66f8a96
+DEBUG 2017-01-25 23:11:55,824 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f8cc22e5-f4e5-459e-be71-1298b61e695f","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:11:55.8242332+08:00","Properties":{}}
+DEBUG 2017-01-25 23:11:55,876 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f8cc22e5-f4e5-459e-be71-1298b61e695f
+DEBUG 2017-01-25 23:12:02,186 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f8cc22e5-f4e5-459e-be71-1298b61e695f
+DEBUG 2017-01-25 23:12:03,005 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ba1d5820-bbad-4041-9c26-78d6a52e26c3","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:12:03.001011+08:00","Properties":{}}
+DEBUG 2017-01-25 23:12:03,066 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ba1d5820-bbad-4041-9c26-78d6a52e26c3
+DEBUG 2017-01-25 23:12:08,767 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ba1d5820-bbad-4041-9c26-78d6a52e26c3
+DEBUG 2017-01-25 23:12:09,620 [47   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"388c062d-e32c-42c6-b93d-8fb97ce618ce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:12:09.6188584+08:00","Properties":{}}
+DEBUG 2017-01-25 23:12:09,649 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 388c062d-e32c-42c6-b93d-8fb97ce618ce
+DEBUG 2017-01-25 23:12:12,742 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a4490296-5918-4019-9cca-3d463a9d0ff3
+DEBUG 2017-01-25 23:12:12,981 [5    ] Kid.English.Web.Notification.MyChatHub   - A client disconnected from MyChatHub:a4490296-5918-4019-9cca-3d463a9d0ff3 and UserId:
+DEBUG 2017-01-25 23:12:13,403 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7c17b5ae-0ad3-4d75-8300-968883d54b2a","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:12:13.4018677+08:00","Properties":{}}
+DEBUG 2017-01-25 23:12:13,403 [43   ] Kid.English.Web.Notification.MyChatHub   - A client connected from MyChatHub:7c17b5ae-0ad3-4d75-8300-968883d54b2a and UserId:2
+DEBUG 2017-01-25 23:12:13,420 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7c17b5ae-0ad3-4d75-8300-968883d54b2a
+DEBUG 2017-01-25 23:12:15,495 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 388c062d-e32c-42c6-b93d-8fb97ce618ce
+DEBUG 2017-01-25 23:12:16,485 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 13e1935a-eb25-49c8-b0d8-5b35bb7e9118
+DEBUG 2017-01-25 23:12:17,436 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7290df49-933d-438d-b926-d8e31a68824f","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:12:17.4355437+08:00","Properties":{}}
+DEBUG 2017-01-25 23:12:17,460 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7290df49-933d-438d-b926-d8e31a68824f
+DEBUG 2017-01-25 23:12:20,757 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7290df49-933d-438d-b926-d8e31a68824f
+DEBUG 2017-01-25 23:12:21,647 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6446ed2e-7e72-48a0-9c78-cdbd5b8ca4ff","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:12:21.6473618+08:00","Properties":{}}
+DEBUG 2017-01-25 23:12:21,682 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6446ed2e-7e72-48a0-9c78-cdbd5b8ca4ff
+DEBUG 2017-01-25 23:13:14,023 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-01-25 23:13:14,049 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-01-25 23:13:14,061 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Web.EnglishWebModule, Kid.English.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishDataModule, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,067 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,067 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,067 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,068 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,068 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishCoreModule, Kid.English.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishApplicationModule, Kid.English.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Api.EnglishWebApiModule, Kid.English.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,071 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,071 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,071 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:14,078 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-01-25 23:13:14,276 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:13:14,276 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:13:14,276 [1    ] o.Configuration.LanguageManagementConfig - Converted English (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:13:14,276 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2017-01-25 23:13:14,527 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2017-01-25 23:13:16,162 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2017-01-25 23:13:16,936 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Kid.English.EntityFramework.EnglishDbContext, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:13:19,048 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-01-25 23:13:19,059 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-01-25 23:13:19,062 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-01-25 23:13:19,062 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: English
+DEBUG 2017-01-25 23:13:19,064 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-01-25 23:13:19,070 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2017-01-25 23:13:19,100 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2017-01-25 23:13:19,104 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@English'
+INFO  2017-01-25 23:13:19,104 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2017-01-25 23:13:19,104 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2017-01-25 23:13:19,104 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2017-01-25 23:13:19,104 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2017-01-25 23:13:19,104 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2017-01-25 23:13:19,104 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2017-01-25 23:13:19,104 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2017-01-25 23:13:19,154 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-01-25 23:13:19,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2017-01-25 23:13:19,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-01-25 23:13:19,295 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-01-25 23:13:19,295 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.CreateUserInput
+DEBUG 2017-01-25 23:13:19,296 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.UserListDto
+DEBUG 2017-01-25 23:13:19,296 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseCreateDto
+DEBUG 2017-01-25 23:13:19,296 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseDto
+DEBUG 2017-01-25 23:13:19,296 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseUpdateInput
+DEBUG 2017-01-25 23:13:19,296 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-01-25 23:13:19,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-01-25 23:13:19,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-01-25 23:13:19,548 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2017-01-25 23:13:19,597 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2017-01-25 23:13:19,664 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-01-25 23:13:19,670 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-01-25 23:13:19,671 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-01-25 23:13:19,675 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-25 23:13:19,675 [e3f65] Hangfire.Server.Worker                   - Background process 'Worker #c9de3f65' started.
+DEBUG 2017-01-25 23:13:19,693 [bdaa3] Hangfire.Server.Worker                   - Background process 'Worker #17ebdaa3' started.
+DEBUG 2017-01-25 23:13:19,740 [5e710] Hangfire.Server.Worker                   - Background process 'Worker #9af5e710' started.
+DEBUG 2017-01-25 23:13:19,761 [835e5] Hangfire.Server.Worker                   - Background process 'Worker #a6c835e5' started.
+DEBUG 2017-01-25 23:13:19,826 [cb19e] Hangfire.Server.Worker                   - Background process 'Worker #24acb19e' started.
+DEBUG 2017-01-25 23:13:19,830 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-01-25 23:13:19,830 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2017-01-25 23:13:19,864 [c7416] Hangfire.Server.Worker                   - Background process 'Worker #256c7416' started.
+DEBUG 2017-01-25 23:13:19,905 [87460] Hangfire.Server.Worker                   - Background process 'Worker #36487460' started.
+DEBUG 2017-01-25 23:13:19,922 [ad9d1] Hangfire.Server.Worker                   - Background process 'Worker #a63ad9d1' started.
+DEBUG 2017-01-25 23:13:19,978 [4de25] Hangfire.Server.Worker                   - Background process 'Worker #7834de25' started.
+DEBUG 2017-01-25 23:13:19,982 [fe94e] Hangfire.Server.Worker                   - Background process 'Worker #13efe94e' started.
+DEBUG 2017-01-25 23:13:20,018 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2017-01-25 23:13:20,018 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2017-01-25 23:13:20,055 [d4433] Hangfire.Server.Worker                   - Background process 'Worker #ad5d4433' started.
+DEBUG 2017-01-25 23:13:20,152 [7df7c] Hangfire.Server.Worker                   - Background process 'Worker #f8f7df7c' started.
+DEBUG 2017-01-25 23:13:20,194 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2017-01-25 23:13:20,194 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2017-01-25 23:13:20,228 [9921b] Hangfire.Server.Worker                   - Background process 'Worker #73e9921b' started.
+DEBUG 2017-01-25 23:13:20,264 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2017-01-25 23:13:20,264 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2017-01-25 23:13:20,277 [d2fbd] Hangfire.Server.Worker                   - Background process 'Worker #e55d2fbd' started.
+DEBUG 2017-01-25 23:13:20,349 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-25 23:13:20,350 [afbb1] Hangfire.Server.Worker                   - Background process 'Worker #502afbb1' started.
+DEBUG 2017-01-25 23:13:20,352 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2017-01-25 23:13:20,385 [ca72c] Hangfire.Server.Worker                   - Background process 'Worker #caeca72c' started.
+DEBUG 2017-01-25 23:13:20,395 [c9714] Hangfire.Server.Worker                   - Background process 'Worker #0bac9714' started.
+DEBUG 2017-01-25 23:13:20,419 [eedac] Hangfire.Server.Worker                   - Background process 'Worker #2ebeedac' started.
+DEBUG 2017-01-25 23:13:20,431 [9781c] Hangfire.Server.Worker                   - Background process 'Worker #8a09781c' started.
+DEBUG 2017-01-25 23:13:20,475 [cc60f] Hangfire.Server.Worker                   - Background process 'Worker #6ddcc60f' started.
+DEBUG 2017-01-25 23:13:20,513 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-01-25 23:13:20,515 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-01-25 23:13:23,482 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-01-25 23:13:23,484 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-01-25 23:13:23,486 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-01-25 23:13:23,488 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Phrases.IPhraseAppService' with service name 'app/phrase'.
+DEBUG 2017-01-25 23:13:23,490 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Notification.IPublishService' with service name 'app/publishService'.
+DEBUG 2017-01-25 23:13:23,492 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-01-25 23:13:23,494 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.BackgroundJobs.IEmailAppService' with service name 'app/email'.
+ERROR 2017-01-25 23:13:25,584 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Can not find IP address of the client! connectionId: 7c17b5ae-0ad3-4d75-8300-968883d54b2a
+ERROR 2017-01-25 23:13:25,584 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Value does not fall within the expected range.
+System.ArgumentException: Value does not fall within the expected range.
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Web.Hosting.IIS7WorkerRequest.GetServerVariableInternal(String name)
+   at System.Web.Hosting.IIS7WorkerRequest.GetServerVariable(String name)
+   at System.Web.HttpRequest.FillInServerVariablesCollection()
+   at System.Web.HttpServerVarsCollection.Populate()
+   at System.Web.HttpServerVarsCollection.Get(String name)
+   at Microsoft.Owin.Host.SystemWeb.OwinCallContext.Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.IPropertySource.GetServerRemoteIpAddress()
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.get_ServerRemoteIpAddress()
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.PropertiesTryGetValue(String key, Object& value)
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item(String key)
+   at Abp.Web.SignalR.Hubs.AbpCommonHub.GetIpAddressOfClient() in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.SignalR\Web\SignalR\Hubs\AbpCommonHub.cs:line 102
+ERROR 2017-01-25 23:13:25,645 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Can not find IP address of the client! connectionId: 6446ed2e-7e72-48a0-9c78-cdbd5b8ca4ff
+ERROR 2017-01-25 23:13:25,645 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Value does not fall within the expected range.
+System.ArgumentException: Value does not fall within the expected range.
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Web.Hosting.IIS7WorkerRequest.GetServerVariableInternal(String name)
+   at System.Web.Hosting.IIS7WorkerRequest.GetServerVariable(String name)
+   at System.Web.HttpRequest.FillInServerVariablesCollection()
+   at System.Web.HttpServerVarsCollection.Populate()
+   at System.Web.HttpServerVarsCollection.Get(String name)
+   at Microsoft.Owin.Host.SystemWeb.OwinCallContext.Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.IPropertySource.GetServerRemoteIpAddress()
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.get_ServerRemoteIpAddress()
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.PropertiesTryGetValue(String key, Object& value)
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item(String key)
+   at Abp.Web.SignalR.Hubs.AbpCommonHub.GetIpAddressOfClient() in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.SignalR\Web\SignalR\Hubs\AbpCommonHub.cs:line 102
+DEBUG 2017-01-25 23:13:25,649 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"7c17b5ae-0ad3-4d75-8300-968883d54b2a","IpAddress":"","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:13:25.5910586+08:00","Properties":{}}
+DEBUG 2017-01-25 23:13:25,694 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"6446ed2e-7e72-48a0-9c78-cdbd5b8ca4ff","IpAddress":"","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:13:25.6455937+08:00","Properties":{}}
+DEBUG 2017-01-25 23:13:25,710 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"28cf0ddf-5e8e-4441-9936-1cd5e6ed01d5","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:13:25.7011304+08:00","Properties":{}}
+DEBUG 2017-01-25 23:13:26,126 [37   ] Kid.English.Web.Notification.MyChatHub   - A client connected from MyChatHub:28cf0ddf-5e8e-4441-9936-1cd5e6ed01d5 and UserId:2
+DEBUG 2017-01-25 23:13:41,411 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"856c178b-dbce-4a75-8d10-4790bf597adb","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:13:41.4105844+08:00","Properties":{}}
+DEBUG 2017-01-25 23:13:41,534 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 856c178b-dbce-4a75-8d10-4790bf597adb
+DEBUG 2017-01-25 23:13:48,521 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 856c178b-dbce-4a75-8d10-4790bf597adb
+DEBUG 2017-01-25 23:13:49,380 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f3a5da18-bd56-47d9-8ea6-31a2a6e56f12","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:13:49.3793042+08:00","Properties":{}}
+DEBUG 2017-01-25 23:13:49,395 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f3a5da18-bd56-47d9-8ea6-31a2a6e56f12
+DEBUG 2017-01-25 23:13:59,934 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f3a5da18-bd56-47d9-8ea6-31a2a6e56f12
+DEBUG 2017-01-25 23:14:01,189 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d097c43d-63b5-4e97-80f9-96650188af2c","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:14:01.1886386+08:00","Properties":{}}
+DEBUG 2017-01-25 23:14:01,248 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d097c43d-63b5-4e97-80f9-96650188af2c
+DEBUG 2017-01-25 23:14:04,574 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d097c43d-63b5-4e97-80f9-96650188af2c
+DEBUG 2017-01-25 23:14:05,723 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"78653bb5-ce4f-4211-b827-59767cbc97a8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:14:05.7226458+08:00","Properties":{}}
+DEBUG 2017-01-25 23:14:05,744 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 78653bb5-ce4f-4211-b827-59767cbc97a8
+DEBUG 2017-01-25 23:14:22,046 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 78653bb5-ce4f-4211-b827-59767cbc97a8
+DEBUG 2017-01-25 23:14:26,232 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1e4f54bd-e629-4958-87c6-572247787929","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:14:26.2319662+08:00","Properties":{}}
+DEBUG 2017-01-25 23:14:26,280 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1e4f54bd-e629-4958-87c6-572247787929
+DEBUG 2017-01-25 23:14:28,080 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1e4f54bd-e629-4958-87c6-572247787929
+DEBUG 2017-01-25 23:14:30,431 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3cb8be68-65ca-454d-802b-9f68b5a39115","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:14:30.4312517+08:00","Properties":{}}
+DEBUG 2017-01-25 23:14:30,462 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3cb8be68-65ca-454d-802b-9f68b5a39115
+DEBUG 2017-01-25 23:14:49,962 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3cb8be68-65ca-454d-802b-9f68b5a39115
+DEBUG 2017-01-25 23:14:54,584 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"14b0b34b-17ef-441d-b4de-12edf2b2c60b","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:14:54.5838616+08:00","Properties":{}}
+DEBUG 2017-01-25 23:14:54,610 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 14b0b34b-17ef-441d-b4de-12edf2b2c60b
+DEBUG 2017-01-25 23:15:32,595 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-01-25 23:15:32,626 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-01-25 23:15:32,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Web.EnglishWebModule, Kid.English.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,639 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishDataModule, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,640 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishCoreModule, Kid.English.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishApplicationModule, Kid.English.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Api.EnglishWebApiModule, Kid.English.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,643 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,643 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,643 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,643 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,643 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:32,648 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-01-25 23:15:32,856 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:15:32,856 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:15:32,856 [1    ] o.Configuration.LanguageManagementConfig - Converted English (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:15:32,856 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2017-01-25 23:15:33,052 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2017-01-25 23:15:33,490 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2017-01-25 23:15:34,097 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Kid.English.EntityFramework.EnglishDbContext, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:15:34,907 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-01-25 23:15:34,916 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-01-25 23:15:34,918 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-01-25 23:15:34,918 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: English
+DEBUG 2017-01-25 23:15:34,919 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-01-25 23:15:34,925 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2017-01-25 23:15:34,940 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2017-01-25 23:15:34,942 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@English'
+INFO  2017-01-25 23:15:34,943 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2017-01-25 23:15:34,943 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2017-01-25 23:15:34,943 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2017-01-25 23:15:34,943 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2017-01-25 23:15:34,943 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2017-01-25 23:15:34,943 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2017-01-25 23:15:34,943 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2017-01-25 23:15:34,976 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-01-25 23:15:35,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2017-01-25 23:15:35,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-01-25 23:15:35,064 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-01-25 23:15:35,064 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.CreateUserInput
+DEBUG 2017-01-25 23:15:35,064 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.UserListDto
+DEBUG 2017-01-25 23:15:35,064 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseCreateDto
+DEBUG 2017-01-25 23:15:35,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseDto
+DEBUG 2017-01-25 23:15:35,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseUpdateInput
+DEBUG 2017-01-25 23:15:35,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-01-25 23:15:35,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-01-25 23:15:35,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-01-25 23:15:35,225 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2017-01-25 23:15:35,232 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2017-01-25 23:15:35,240 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-01-25 23:15:35,241 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-01-25 23:15:35,278 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-01-25 23:15:35,282 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-25 23:15:35,283 [92e81] Hangfire.Server.Worker                   - Background process 'Worker #66492e81' started.
+DEBUG 2017-01-25 23:15:35,311 [a283a] Hangfire.Server.Worker                   - Background process 'Worker #498a283a' started.
+DEBUG 2017-01-25 23:15:35,451 [a68c5] Hangfire.Server.Worker                   - Background process 'Worker #11fa68c5' started.
+DEBUG 2017-01-25 23:15:35,452 [ea3ce] Hangfire.Server.Worker                   - Background process 'Worker #99bea3ce' started.
+DEBUG 2017-01-25 23:15:35,464 [ba0fe] Hangfire.Server.Worker                   - Background process 'Worker #1c1ba0fe' started.
+DEBUG 2017-01-25 23:15:35,521 [41b63] Hangfire.Server.Worker                   - Background process 'Worker #de541b63' started.
+DEBUG 2017-01-25 23:15:35,524 [2450d] Hangfire.Server.Worker                   - Background process 'Worker #8702450d' started.
+DEBUG 2017-01-25 23:15:35,574 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-01-25 23:15:35,574 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2017-01-25 23:15:35,580 [37386] Hangfire.Server.Worker                   - Background process 'Worker #66837386' started.
+DEBUG 2017-01-25 23:15:35,616 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-25 23:15:35,617 [c44d8] Hangfire.Server.Worker                   - Background process 'Worker #768c44d8' started.
+DEBUG 2017-01-25 23:15:35,651 [ea210] Hangfire.Server.Worker                   - Background process 'Worker #a1aea210' started.
+DEBUG 2017-01-25 23:15:35,665 [e68e1] Hangfire.Server.Worker                   - Background process 'Worker #0fae68e1' started.
+DEBUG 2017-01-25 23:15:35,693 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2017-01-25 23:15:35,693 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2017-01-25 23:15:35,785 [2caa3] Hangfire.Server.Worker                   - Background process 'Worker #e522caa3' started.
+DEBUG 2017-01-25 23:15:35,789 [fa3d5] Hangfire.Server.Worker                   - Background process 'Worker #954fa3d5' started.
+DEBUG 2017-01-25 23:15:35,823 [be350] Hangfire.Server.Worker                   - Background process 'Worker #5b3be350' started.
+DEBUG 2017-01-25 23:15:35,854 [ad250] Hangfire.Server.Worker                   - Background process 'Worker #5e7ad250' started.
+DEBUG 2017-01-25 23:15:35,897 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2017-01-25 23:15:35,898 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2017-01-25 23:15:35,925 [58114] Hangfire.Server.Worker                   - Background process 'Worker #f5e58114' started.
+DEBUG 2017-01-25 23:15:35,926 [8751c] Hangfire.Server.Worker                   - Background process 'Worker #2d38751c' started.
+DEBUG 2017-01-25 23:15:35,967 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2017-01-25 23:15:35,967 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2017-01-25 23:15:35,979 [9db8c] Hangfire.Server.Worker                   - Background process 'Worker #40c9db8c' started.
+DEBUG 2017-01-25 23:15:36,001 [e21ac] Hangfire.Server.Worker                   - Background process 'Worker #577e21ac' started.
+DEBUG 2017-01-25 23:15:36,028 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2017-01-25 23:15:36,029 [978c6] Hangfire.Server.Worker                   - Background process 'Worker #a03978c6' started.
+DEBUG 2017-01-25 23:15:36,066 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-01-25 23:15:36,070 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-01-25 23:15:39,093 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-01-25 23:15:39,095 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-01-25 23:15:39,096 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-01-25 23:15:39,097 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Phrases.IPhraseAppService' with service name 'app/phrase'.
+DEBUG 2017-01-25 23:15:39,099 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Notification.IPublishService' with service name 'app/publishService'.
+DEBUG 2017-01-25 23:15:39,100 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-01-25 23:15:39,102 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.BackgroundJobs.IEmailAppService' with service name 'app/email'.
+ERROR 2017-01-25 23:15:42,203 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Can not find IP address of the client! connectionId: 14b0b34b-17ef-441d-b4de-12edf2b2c60b
+ERROR 2017-01-25 23:15:42,203 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Value does not fall within the expected range.
+System.ArgumentException: Value does not fall within the expected range.
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Web.Hosting.IIS7WorkerRequest.GetServerVariableInternal(String name)
+   at System.Web.Hosting.IIS7WorkerRequest.GetServerVariable(String name)
+   at System.Web.HttpRequest.FillInServerVariablesCollection()
+   at System.Web.HttpServerVarsCollection.Populate()
+   at System.Web.HttpServerVarsCollection.Get(String name)
+   at Microsoft.Owin.Host.SystemWeb.OwinCallContext.Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.IPropertySource.GetServerRemoteIpAddress()
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.get_ServerRemoteIpAddress()
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.PropertiesTryGetValue(String key, Object& value)
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item(String key)
+   at Abp.Web.SignalR.Hubs.AbpCommonHub.GetIpAddressOfClient() in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.SignalR\Web\SignalR\Hubs\AbpCommonHub.cs:line 102
+DEBUG 2017-01-25 23:15:42,245 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"14b0b34b-17ef-441d-b4de-12edf2b2c60b","IpAddress":"","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:15:42.2113466+08:00","Properties":{}}
+DEBUG 2017-01-25 23:15:42,245 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"28cf0ddf-5e8e-4441-9936-1cd5e6ed01d5","IpAddress":"127.0.0.1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:15:42.2033417+08:00","Properties":{}}
+DEBUG 2017-01-25 23:15:53,478 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"072f3e59-7a48-4827-8eed-d8da8077efa3","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:15:53.4778204+08:00","Properties":{}}
+DEBUG 2017-01-25 23:15:53,679 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 072f3e59-7a48-4827-8eed-d8da8077efa3
+DEBUG 2017-01-25 23:17:03,594 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-01-25 23:17:03,621 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-01-25 23:17:03,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Web.EnglishWebModule, Kid.English.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishDataModule, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishCoreModule, Kid.English.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishApplicationModule, Kid.English.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Api.EnglishWebApiModule, Kid.English.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:03,641 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-01-25 23:17:03,790 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:17:03,790 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:17:03,790 [1    ] o.Configuration.LanguageManagementConfig - Converted English (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:17:03,790 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2017-01-25 23:17:03,874 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2017-01-25 23:17:04,311 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2017-01-25 23:17:04,894 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Kid.English.EntityFramework.EnglishDbContext, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:17:06,879 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-01-25 23:17:06,893 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-01-25 23:17:06,897 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-01-25 23:17:06,898 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: English
+DEBUG 2017-01-25 23:17:06,899 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-01-25 23:17:06,921 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2017-01-25 23:17:06,951 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2017-01-25 23:17:06,956 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@English'
+INFO  2017-01-25 23:17:06,957 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2017-01-25 23:17:06,957 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2017-01-25 23:17:06,957 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2017-01-25 23:17:06,957 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2017-01-25 23:17:06,957 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2017-01-25 23:17:06,957 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2017-01-25 23:17:06,957 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2017-01-25 23:17:07,010 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-01-25 23:17:07,116 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2017-01-25 23:17:07,116 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-01-25 23:17:07,122 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-01-25 23:17:07,123 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.CreateUserInput
+DEBUG 2017-01-25 23:17:07,126 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.UserListDto
+DEBUG 2017-01-25 23:17:07,126 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseCreateDto
+DEBUG 2017-01-25 23:17:07,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseDto
+DEBUG 2017-01-25 23:17:07,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseUpdateInput
+DEBUG 2017-01-25 23:17:07,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-01-25 23:17:07,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-01-25 23:17:07,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-01-25 23:17:07,395 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2017-01-25 23:17:07,438 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2017-01-25 23:17:07,449 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-01-25 23:17:07,458 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-01-25 23:17:07,487 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-01-25 23:17:07,489 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-25 23:17:07,495 [ff99c] Hangfire.Server.Worker                   - Background process 'Worker #f8bff99c' started.
+DEBUG 2017-01-25 23:17:07,571 [c7925] Hangfire.Server.Worker                   - Background process 'Worker #cdcc7925' started.
+DEBUG 2017-01-25 23:17:07,610 [076e1] Hangfire.Server.Worker                   - Background process 'Worker #8c2076e1' started.
+DEBUG 2017-01-25 23:17:07,661 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-01-25 23:17:07,661 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2017-01-25 23:17:07,696 [f52f3] Hangfire.Server.Worker                   - Background process 'Worker #c7af52f3' started.
+DEBUG 2017-01-25 23:17:07,732 [579db] Hangfire.Server.Worker                   - Background process 'Worker #040579db' started.
+DEBUG 2017-01-25 23:17:07,746 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-25 23:17:07,797 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2017-01-25 23:17:07,798 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2017-01-25 23:17:07,829 [70282] Hangfire.Server.Worker                   - Background process 'Worker #73a70282' started.
+DEBUG 2017-01-25 23:17:07,864 [02264] Hangfire.Server.Worker                   - Background process 'Worker #a8902264' started.
+DEBUG 2017-01-25 23:17:07,929 [46ea9] Hangfire.Server.Worker                   - Background process 'Worker #e4646ea9' started.
+DEBUG 2017-01-25 23:17:07,930 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2017-01-25 23:17:07,930 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2017-01-25 23:17:07,969 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2017-01-25 23:17:07,970 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2017-01-25 23:17:07,996 [83646] Hangfire.Server.Worker                   - Background process 'Worker #2b183646' started.
+DEBUG 2017-01-25 23:17:08,027 [ab4d1] Hangfire.Server.Worker                   - Background process 'Worker #ab5ab4d1' started.
+DEBUG 2017-01-25 23:17:08,048 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2017-01-25 23:17:08,049 [e6570] Hangfire.Server.Worker                   - Background process 'Worker #9bee6570' started.
+DEBUG 2017-01-25 23:17:08,069 [9b842] Hangfire.Server.Worker                   - Background process 'Worker #0cf9b842' started.
+DEBUG 2017-01-25 23:17:08,111 [65b2d] Hangfire.Server.Worker                   - Background process 'Worker #04865b2d' started.
+DEBUG 2017-01-25 23:17:08,135 [47452] Hangfire.Server.Worker                   - Background process 'Worker #83c47452' started.
+DEBUG 2017-01-25 23:17:08,149 [48781] Hangfire.Server.Worker                   - Background process 'Worker #5cb48781' started.
+DEBUG 2017-01-25 23:17:08,155 [a0543] Hangfire.Server.Worker                   - Background process 'Worker #b23a0543' started.
+DEBUG 2017-01-25 23:17:08,177 [6d07f] Hangfire.Server.Worker                   - Background process 'Worker #b8b6d07f' started.
+DEBUG 2017-01-25 23:17:08,197 [f101b] Hangfire.Server.Worker                   - Background process 'Worker #d51f101b' started.
+DEBUG 2017-01-25 23:17:08,244 [f7e77] Hangfire.Server.Worker                   - Background process 'Worker #7bff7e77' started.
+DEBUG 2017-01-25 23:17:08,246 [277cc] Hangfire.Server.Worker                   - Background process 'Worker #4ea277cc' started.
+DEBUG 2017-01-25 23:17:08,288 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-01-25 23:17:08,295 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-01-25 23:17:11,221 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-01-25 23:17:11,224 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-01-25 23:17:11,228 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-01-25 23:17:11,230 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Phrases.IPhraseAppService' with service name 'app/phrase'.
+DEBUG 2017-01-25 23:17:11,232 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Notification.IPublishService' with service name 'app/publishService'.
+DEBUG 2017-01-25 23:17:11,234 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-01-25 23:17:11,236 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.BackgroundJobs.IEmailAppService' with service name 'app/email'.
+ERROR 2017-01-25 23:17:12,479 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Can not find IP address of the client! connectionId: 28cf0ddf-5e8e-4441-9936-1cd5e6ed01d5
+ERROR 2017-01-25 23:17:12,479 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Value does not fall within the expected range.
+System.ArgumentException: Value does not fall within the expected range.
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Web.Hosting.IIS7WorkerRequest.GetServerVariableInternal(String name)
+   at System.Web.Hosting.IIS7WorkerRequest.GetServerVariable(String name)
+   at System.Web.HttpRequest.FillInServerVariablesCollection()
+   at System.Web.HttpServerVarsCollection.Populate()
+   at System.Web.HttpServerVarsCollection.Get(String name)
+   at Microsoft.Owin.Host.SystemWeb.OwinCallContext.Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.IPropertySource.GetServerRemoteIpAddress()
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.get_ServerRemoteIpAddress()
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.PropertiesTryGetValue(String key, Object& value)
+   at Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item(String key)
+   at Abp.Web.SignalR.Hubs.AbpCommonHub.GetIpAddressOfClient() in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.SignalR\Web\SignalR\Hubs\AbpCommonHub.cs:line 102
+DEBUG 2017-01-25 23:17:12,531 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"28cf0ddf-5e8e-4441-9936-1cd5e6ed01d5","IpAddress":"","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:17:12.4866279+08:00","Properties":{}}
+DEBUG 2017-01-25 23:17:12,559 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2eeb6eb4-a3ce-411b-927b-8ae81a0107a5","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:17:12.5586769+08:00","Properties":{}}
+DEBUG 2017-01-25 23:17:12,731 [6    ] Kid.English.Web.Notification.MyChatHub   - A client connected from MyChatHub:2eeb6eb4-a3ce-411b-927b-8ae81a0107a5 and UserId:2
+DEBUG 2017-01-25 23:17:38,647 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"02459bcd-8468-459a-b034-166c7751e6de","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:17:38.6467875+08:00","Properties":{}}
+DEBUG 2017-01-25 23:17:38,901 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 02459bcd-8468-459a-b034-166c7751e6de
+DEBUG 2017-01-25 23:17:55,570 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 02459bcd-8468-459a-b034-166c7751e6de
+DEBUG 2017-01-25 23:17:56,603 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"732362c6-da42-4593-9ed4-07078b454293","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:17:56.6028285+08:00","Properties":{}}
+DEBUG 2017-01-25 23:17:56,630 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 732362c6-da42-4593-9ed4-07078b454293
+DEBUG 2017-01-25 23:17:59,447 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 732362c6-da42-4593-9ed4-07078b454293
+DEBUG 2017-01-25 23:18:08,138 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ec59d100-a6cb-41a3-be0a-940bf3114f39","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:18:08.1384946+08:00","Properties":{}}
+DEBUG 2017-01-25 23:18:08,167 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ec59d100-a6cb-41a3-be0a-940bf3114f39
+DEBUG 2017-01-25 23:18:14,369 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ec59d100-a6cb-41a3-be0a-940bf3114f39
+DEBUG 2017-01-25 23:18:15,228 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"80654bf4-2559-46fe-962f-34960355598e","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:18:15.2279287+08:00","Properties":{}}
+DEBUG 2017-01-25 23:18:15,264 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 80654bf4-2559-46fe-962f-34960355598e
+DEBUG 2017-01-25 23:22:38,222 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-01-25 23:22:38,249 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-01-25 23:22:38,256 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Web.EnglishWebModule, Kid.English.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,259 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishDataModule, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,260 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,260 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,260 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,261 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,261 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishCoreModule, Kid.English.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,261 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.EnglishApplicationModule, Kid.English.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,262 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,262 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Kid.English.Api.EnglishWebApiModule, Kid.English.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,262 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,262 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:38,275 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-01-25 23:22:38,459 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:22:38,459 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:22:38,459 [1    ] o.Configuration.LanguageManagementConfig - Converted English (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-01-25 23:22:38,459 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2017-01-25 23:22:38,577 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2017-01-25 23:22:39,022 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2017-01-25 23:22:39,706 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Kid.English.EntityFramework.EnglishDbContext, Kid.English.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-01-25 23:22:41,953 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-01-25 23:22:41,962 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-01-25 23:22:41,964 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-01-25 23:22:41,965 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: English
+DEBUG 2017-01-25 23:22:41,966 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-01-25 23:22:41,977 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2017-01-25 23:22:41,993 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2017-01-25 23:22:41,997 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@English'
+INFO  2017-01-25 23:22:41,997 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2017-01-25 23:22:41,997 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2017-01-25 23:22:41,997 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2017-01-25 23:22:41,997 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2017-01-25 23:22:41,998 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2017-01-25 23:22:41,998 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2017-01-25 23:22:41,998 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2017-01-25 23:22:42,052 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-01-25 23:22:42,167 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2017-01-25 23:22:42,167 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-01-25 23:22:42,173 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-01-25 23:22:42,173 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.CreateUserInput
+DEBUG 2017-01-25 23:22:42,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Users.Dto.UserListDto
+DEBUG 2017-01-25 23:22:42,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseCreateDto
+DEBUG 2017-01-25 23:22:42,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseDto
+DEBUG 2017-01-25 23:22:42,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Phrases.Dto.PhraseUpdateInput
+DEBUG 2017-01-25 23:22:42,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-01-25 23:22:42,175 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-01-25 23:22:42,175 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Kid.English.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-01-25 23:22:42,360 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2017-01-25 23:22:42,367 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2017-01-25 23:22:42,402 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-01-25 23:22:42,438 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-01-25 23:22:42,440 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+INFO  2017-01-25 23:22:42,442 [chdog] Hangfire.Server.ServerWatchdog           - 3 servers were removed due to timeout
+DEBUG 2017-01-25 23:22:42,443 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-25 23:22:42,446 [66cb0] Hangfire.Server.Worker                   - Background process 'Worker #64066cb0' started.
+DEBUG 2017-01-25 23:22:42,477 [c12ff] Hangfire.Server.Worker                   - Background process 'Worker #95ec12ff' started.
+DEBUG 2017-01-25 23:22:42,489 [5b77e] Hangfire.Server.Worker                   - Background process 'Worker #3c85b77e' started.
+DEBUG 2017-01-25 23:22:42,493 [0eba9] Hangfire.Server.Worker                   - Background process 'Worker #7930eba9' started.
+DEBUG 2017-01-25 23:22:42,568 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-25 23:22:42,610 [81243] Hangfire.Server.Worker                   - Background process 'Worker #38c81243' started.
+DEBUG 2017-01-25 23:22:42,664 [67d70] Hangfire.Server.Worker                   - Background process 'Worker #2fb67d70' started.
+DEBUG 2017-01-25 23:22:42,718 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-01-25 23:22:42,718 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2017-01-25 23:22:42,719 [700e9] Hangfire.Server.Worker                   - Background process 'Worker #15f700e9' started.
+DEBUG 2017-01-25 23:22:42,802 [99faa] Hangfire.Server.Worker                   - Background process 'Worker #9db99faa' started.
+DEBUG 2017-01-25 23:22:42,836 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2017-01-25 23:22:42,836 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2017-01-25 23:22:42,866 [3509c] Hangfire.Server.Worker                   - Background process 'Worker #4d23509c' started.
+DEBUG 2017-01-25 23:22:42,908 [b1bd7] Hangfire.Server.Worker                   - Background process 'Worker #d8ab1bd7' started.
+DEBUG 2017-01-25 23:22:42,953 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2017-01-25 23:22:42,953 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2017-01-25 23:22:42,966 [347aa] Hangfire.Server.Worker                   - Background process 'Worker #df2347aa' started.
+DEBUG 2017-01-25 23:22:43,019 [4f33d] Hangfire.Server.Worker                   - Background process 'Worker #79f4f33d' started.
+DEBUG 2017-01-25 23:22:43,097 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2017-01-25 23:22:43,097 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2017-01-25 23:22:43,098 [91884] Hangfire.Server.Worker                   - Background process 'Worker #99f91884' started.
+DEBUG 2017-01-25 23:22:43,157 [3792c] Hangfire.Server.Worker                   - Background process 'Worker #d043792c' started.
+DEBUG 2017-01-25 23:22:43,189 [f7530] Hangfire.Server.Worker                   - Background process 'Worker #70bf7530' started.
+DEBUG 2017-01-25 23:22:43,191 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2017-01-25 23:22:43,247 [b3f44] Hangfire.Server.Worker                   - Background process 'Worker #f8fb3f44' started.
+DEBUG 2017-01-25 23:22:43,275 [622b5] Hangfire.Server.Worker                   - Background process 'Worker #500622b5' started.
+DEBUG 2017-01-25 23:22:43,487 [ba1b0] Hangfire.Server.Worker                   - Background process 'Worker #c9eba1b0' started.
+DEBUG 2017-01-25 23:22:43,589 [c3e3f] Hangfire.Server.Worker                   - Background process 'Worker #d85c3e3f' started.
+DEBUG 2017-01-25 23:22:43,639 [1bc43] Hangfire.Server.Worker                   - Background process 'Worker #25b1bc43' started.
+DEBUG 2017-01-25 23:22:43,682 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-01-25 23:22:43,690 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-01-25 23:22:47,160 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-01-25 23:22:47,162 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-01-25 23:22:47,164 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-01-25 23:22:47,167 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Phrases.IPhraseAppService' with service name 'app/phrase'.
+DEBUG 2017-01-25 23:22:47,169 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.Notification.IPublishService' with service name 'app/publishService'.
+DEBUG 2017-01-25 23:22:47,170 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-01-25 23:22:47,172 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Kid.English.BackgroundJobs.IEmailAppService' with service name 'app/email'.
+DEBUG 2017-01-25 23:22:48,754 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9dd900d6-66b9-4e37-8e52-ed9d10075278","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:22:48.7192971+08:00","Properties":{}}
+DEBUG 2017-01-25 23:22:48,958 [7    ] Kid.English.Web.Notification.MyChatHub   - A client connected from MyChatHub:9dd900d6-66b9-4e37-8e52-ed9d10075278 and UserId:2
+DEBUG 2017-01-25 23:23:05,924 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"23f9348c-35ce-472e-a635-9180545ce12c","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:23:05.9237092+08:00","Properties":{}}
+DEBUG 2017-01-25 23:23:06,047 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 23f9348c-35ce-472e-a635-9180545ce12c
+DEBUG 2017-01-25 23:23:10,235 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 23f9348c-35ce-472e-a635-9180545ce12c
+DEBUG 2017-01-25 23:23:10,872 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c89c78d0-b65c-47ce-8079-44a73ac0d466","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:23:10.8714916+08:00","Properties":{}}
+DEBUG 2017-01-25 23:23:10,898 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c89c78d0-b65c-47ce-8079-44a73ac0d466
+DEBUG 2017-01-25 23:23:14,549 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c89c78d0-b65c-47ce-8079-44a73ac0d466
+DEBUG 2017-01-25 23:23:15,497 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ed98af45-c247-4b54-a8e7-9ac4fffd9ee3","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:23:15.4965598+08:00","Properties":{}}
+DEBUG 2017-01-25 23:23:15,513 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ed98af45-c247-4b54-a8e7-9ac4fffd9ee3
+DEBUG 2017-01-25 23:23:17,850 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ed98af45-c247-4b54-a8e7-9ac4fffd9ee3
+DEBUG 2017-01-25 23:23:18,954 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5b6b2025-4973-4b20-af27-301cca67a644","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:23:18.9534726+08:00","Properties":{}}
+DEBUG 2017-01-25 23:23:18,960 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5b6b2025-4973-4b20-af27-301cca67a644
+DEBUG 2017-01-25 23:25:18,091 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5b6b2025-4973-4b20-af27-301cca67a644
+DEBUG 2017-01-25 23:25:19,597 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e3f7b6e1-fc1d-479a-ac90-7a1b9a0cc0ed","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-01-25T23:25:19.5972227+08:00","Properties":{}}
+DEBUG 2017-01-25 23:25:19,630 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e3f7b6e1-fc1d-479a-ac90-7a1b9a0cc0ed
+INFO  2017-01-25 23:27:42,455 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2017-01-25 23:27:42,569 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-25 23:27:42,731 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-25 23:32:42,731 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-25 23:32:42,949 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2017-01-25 23:37:42,949 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2017-01-25 23:37:43,111 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.

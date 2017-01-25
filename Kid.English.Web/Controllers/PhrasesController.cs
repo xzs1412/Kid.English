@@ -52,6 +52,7 @@ namespace Kid.English.Web.Controllers
         [AbpAuthorize]
         public ActionResult Create()
         {
+            ViewBag.Count = _phraseAppService.GetCount();
             return View();
         }
 
@@ -77,7 +78,7 @@ namespace Kid.English.Web.Controllers
                 _phraseAppService.CreatePhrase(phrase);
             }
 
-            return View("Create");
+            return Create();
         }
 
         /// <summary>

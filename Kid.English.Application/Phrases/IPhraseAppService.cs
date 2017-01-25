@@ -30,5 +30,7 @@ namespace Kid.English.Phrases
         /// </summary>
         /// <returns></returns>
         List<PhraseDto> GetAllDeletedPhrases();
+
+         int  GetCount();
     }
 }
