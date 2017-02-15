@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Transactions;
 using Abp.Domain.Uow;
 using AutoMapper;
 using Kid.English.Phrases.Dto;
@@ -35,12 +36,17 @@ namespace Kid.English.Phrases
             };
         }
 
+ 
         public void CreatePhrase(PhraseCreateDto input)
-        {
-            var phrase = Mapper.Map<Phrase>(input);
-            phrase.Id = Guid.NewGuid();
-            _phraseRepository.Insert(phrase);
-            CurrentUnitOfWork.SaveChanges();
+        {  
+            using (var uow=UnitOfWorkManager.Begin(TransactionScopeOption.Suppress))
+            {
+                var phrase = Mapper.Map<Phrase>(input);
+                phrase.Id = Guid.NewGuid();
+                _phraseRepository.Insert(phrase);          
+                uow.Complete();
+            }
+            throw new Exception($"the exception inner {nameof(CreatePhrase)}");
         }
 
 
@@ -63,8 +69,7 @@ namespace Kid.English.Phrases
             phrase.SentenceHtml = input.SentenceHtml;
             phrase.ChineseMean = input.ChineseMean;
             phrase.Sentence = input.Sentence;
-            //这句Map之后,update的话异常,提示Id已经存在
-            //phrase = Mapper.Map<Phrase>(input);
+            //phrase = Mapper.Map<Phrase>(input);//这句Map之后,update的话异常,提示Id已经存在
             _phraseRepository.Update(phrase);
         }
 

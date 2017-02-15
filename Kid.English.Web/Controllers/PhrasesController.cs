@@ -19,6 +19,7 @@ namespace Kid.English.Web.Controllers
         public PhrasesController(IPhraseAppService phraseAppService, IEmailAppService emailAppService
             ,PublishService publishService)
         {
+          
             _phraseAppService = phraseAppService;
             _emailAppService = emailAppService;
             _publishService = publishService;
@@ -27,6 +28,7 @@ namespace Kid.English.Web.Controllers
         public async Task<ActionResult> Index(int pageIndex = 1, string englishKeyWords = "",
             string chineseKeyWords = "")
         {
+        var a=    AbpSession.EmailAddress;
             CheckModelState();
             //var fullName = AbpSession.FullName;
         // await   _publishService.Publish_LowDisk(12);

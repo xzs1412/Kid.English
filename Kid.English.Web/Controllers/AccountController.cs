@@ -27,6 +27,8 @@ using Microsoft.Owin.Security;
 using Abp.Runtime.Session;
 using System.Threading;
 using System.Runtime.CompilerServices;
+using Abp.MultiTenancy;
+using Abp.Runtime;
 
 namespace Kid.English.Web.Controllers
 {
@@ -41,10 +43,7 @@ namespace Kid.English.Web.Controllers
 
         private IAuthenticationManager AuthenticationManager
         {
-            get
-            {
-                return HttpContext.GetOwinContext().Authentication;
-            }
+            get { return HttpContext.GetOwinContext().Authentication; }
         }
 
         public AccountController(
@@ -90,7 +89,7 @@ namespace Kid.English.Web.Controllers
                 loginModel.UsernameOrEmailAddress,
                 loginModel.Password,
                 loginModel.TenancyName
-                );
+            );
 
             await SignInAsync(loginResult.User, loginResult.Identity, loginModel.RememberMe);
 
@@ -104,10 +103,11 @@ namespace Kid.English.Web.Controllers
                 returnUrl = returnUrl + returnUrlHash;
             }
 
-            return Json(new AjaxResponse { TargetUrl = returnUrl});
+            return Json(new AjaxResponse {TargetUrl = returnUrl});
         }
 
-        private async Task<AbpLoginResult<Tenant, User>> GetLoginResultAsync(string usernameOrEmailAddress, string password, string tenancyName)
+        private async Task<AbpLoginResult<Tenant, User>> GetLoginResultAsync(string usernameOrEmailAddress,
+            string password, string tenancyName)
         {
             var loginResult = await _logInManager.LoginAsync(usernameOrEmailAddress, password, tenancyName);
 
@@ -128,7 +128,7 @@ namespace Kid.English.Web.Controllers
             }
 
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            AuthenticationManager.SignIn(new AuthenticationProperties { IsPersistent = rememberMe }, identity);
+            AuthenticationManager.SignIn(new AuthenticationProperties {IsPersistent = rememberMe}, identity);
 
             //IAbpSession Extensions
             identity.AddClaim(new Claim(ClaimTypes.Email, user.EmailAddress));
@@ -141,7 +141,8 @@ namespace Kid.English.Web.Controllers
             AbpSession.SetMyName(user.FullName);
         }
 
-        private Exception CreateExceptionForFailedLoginAttempt(AbpLoginResultType result, string usernameOrEmailAddress, string tenancyName)
+        private Exception CreateExceptionForFailedLoginAttempt(AbpLoginResultType result, string usernameOrEmailAddress,
+            string tenancyName)
         {
             switch (result)
             {
@@ -151,14 +152,18 @@ namespace Kid.English.Web.Controllers
                 case AbpLoginResultType.InvalidPassword:
                     return new UserFriendlyException(L("LoginFailed"), L("InvalidUserNameOrPassword"));
                 case AbpLoginResultType.InvalidTenancyName:
-                    return new UserFriendlyException(L("LoginFailed"), L("ThereIsNoTenantDefinedWithName{0}", tenancyName));
+                    return new UserFriendlyException(L("LoginFailed"),
+                        L("ThereIsNoTenantDefinedWithName{0}", tenancyName));
                 case AbpLoginResultType.TenantIsNotActive:
                     return new UserFriendlyException(L("LoginFailed"), L("TenantIsNotActive", tenancyName));
                 case AbpLoginResultType.UserIsNotActive:
-                    return new UserFriendlyException(L("LoginFailed"), L("UserIsNotActiveAndCanNotLogin", usernameOrEmailAddress));
+                    return new UserFriendlyException(L("LoginFailed"),
+                        L("UserIsNotActiveAndCanNotLogin", usernameOrEmailAddress));
                 case AbpLoginResultType.UserEmailIsNotConfirmed:
-                    return new UserFriendlyException(L("LoginFailed"), "Your email address is not confirmed. You can not login"); //TODO: localize message
-                default: //Can not fall to default actually. But other result types can be added in the future and we may forget to handle it
+                    return new UserFriendlyException(L("LoginFailed"),
+                        "Your email address is not confirmed. You can not login"); //TODO: localize message
+                default:
+                    //Can not fall to default actually. But other result types can be added in the future and we may forget to handle it
                     Logger.Warn("Unhandled login fail reason: " + result);
                     return new UserFriendlyException(L("LoginFailed"));
             }
@@ -243,7 +248,8 @@ namespace Kid.English.Web.Controllers
 
                     model.Password = Users.User.CreateRandomPassword();
 
-                    if (string.Equals(externalLoginInfo.Email, model.EmailAddress, StringComparison.InvariantCultureIgnoreCase))
+                    if (string.Equals(externalLoginInfo.Email, model.EmailAddress,
+                        StringComparison.InvariantCultureIgnoreCase))
                     {
                         user.IsEmailConfirmed = true;
                     }
@@ -268,7 +274,7 @@ namespace Kid.English.Web.Controllers
                 user.Roles = new List<UserRole>();
                 foreach (var defaultRole in await _roleManager.Roles.Where(r => r.IsDefault).ToListAsync())
                 {
-                    user.Roles.Add(new UserRole { RoleId = defaultRole.Id });
+                    user.Roles.Add(new UserRole {RoleId = defaultRole.Id});
                 }
 
                 //Save user
@@ -294,7 +300,8 @@ namespace Kid.English.Web.Controllers
                         return Redirect(Url.Action("Index", "Home"));
                     }
 
-                    Logger.Warn("New registered user could not be login. This should not be normally. login result: " + loginResult.Result);
+                    Logger.Warn("New registered user could not be login. This should not be normally. login result: " +
+                                loginResult.Result);
                 }
 
                 //If can not login, show a register result page
@@ -333,7 +340,7 @@ namespace Kid.English.Web.Controllers
                     {
                         ReturnUrl = returnUrl
                     })
-                );
+            );
         }
 
         [UnitOfWork]
@@ -359,7 +366,7 @@ namespace Kid.English.Web.Controllers
                     default:
                         return View("TenantSelection", new TenantSelectionViewModel
                         {
-                            Action = Url.Action("ExternalLoginCallback", "Account", new { returnUrl }),
+                            Action = Url.Action("ExternalLoginCallback", "Account", new {returnUrl}),
                             Tenants = tenants.MapTo<List<TenantSelectionViewModel.TenantInfo>>()
                         });
                 }
@@ -381,7 +388,8 @@ namespace Kid.English.Web.Controllers
                 case AbpLoginResultType.UnknownExternalLogin:
                     return await RegisterView(loginInfo, tenancyName);
                 default:
-                    throw CreateExceptionForFailedLoginAttempt(loginResult.Result, loginInfo.Email ?? loginInfo.DefaultUserName, tenancyName);
+                    throw CreateExceptionForFailedLoginAttempt(loginResult.Result,
+                        loginInfo.Email ?? loginInfo.DefaultUserName, tenancyName);
             }
         }
 
@@ -390,7 +398,8 @@ namespace Kid.English.Web.Controllers
             var name = loginInfo.DefaultUserName;
             var surname = loginInfo.DefaultUserName;
 
-            var extractedNameAndSurname = TryExtractNameAndSurnameFromClaims(loginInfo.ExternalIdentity.Claims.ToList(), ref name, ref surname);
+            var extractedNameAndSurname = TryExtractNameAndSurnameFromClaims(
+                loginInfo.ExternalIdentity.Claims.ToList(), ref name, ref surname);
 
             var viewModel = new RegisterViewModel
             {
@@ -516,9 +525,11 @@ namespace Kid.English.Web.Controllers
     /// </summary>
     public class AbpSessionExtensions : ClaimsAbpSession, IAbpSessionExtensions
     {
-        public AbpSessionExtensions(IMultiTenancyConfig multiTenancy) : base(multiTenancy)
+        public AbpSessionExtensions(IPrincipalAccessor principalAccessor,
+            IMultiTenancyConfig multiTenancy, ITenantResolver tenantResolver,
+            IAmbientScopeProvider<SessionOverride> sessionOverrideScopeProvider)
+            : base(principalAccessor, multiTenancy, tenantResolver, sessionOverrideScopeProvider)
         {
-
         }
 
         public string EmailAddress => GetKeyValue(ClaimTypes.Email);
@@ -538,10 +549,9 @@ namespace Kid.English.Web.Controllers
             }
 
             return claim.Value;
-
         }
     }
-    
+
     /// <summary>
     /// IAbpSession Extensions2 登录时"记住我"不能保存Cookie,也就是说关闭后再打开不重新登录的话,取不到值.
     /// </summary>
@@ -555,20 +565,14 @@ namespace Kid.English.Web.Controllers
             return _myName.GetOrCreateValue(session).MyName;
         }
 
-        public static void SetMyName(this IAbpSession session,string myName)
+        public static void SetMyName(this IAbpSession session, string myName)
         {
-     
             _myName.GetOrCreateValue(session).MyName = myName;
-            
         }
 
         public class AbpSessionValue
         {
             public string MyName { get; set; }
-           
         }
     }
-
-
 }
-

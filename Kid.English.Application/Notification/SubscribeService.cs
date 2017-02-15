@@ -5,7 +5,6 @@ using Abp.Dependency;
 using Abp.Domain.Entities;
 using Abp.Notifications;
 using Kid.English.Phrases;
-using Microsoft.AspNet.Identity;
 
 namespace Kid.English.Notification
 {
